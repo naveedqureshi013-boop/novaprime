@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Prime Institute — Free Premium Forex Signals</title>
+
+<!-- Facebook Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '921231864142727');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=921231864142727&ev=PageView&noscript=1"/></noscript>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+@font-face {
+  font-family: 'HeadingFont';
+  src: local('Impact'), local('Arial Black'), local('Haettenschweiler');
+  font-weight: 900;
+  font-style: normal;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --black: #0A0A0A;
+  --white: #FFFFFF;
+  --off-white: #F0EDE6;
+  --cream: #E8E4D9;
+  --dark-gray: #1A1A1A;
+  --mid-gray: #888;
+  --accent: #C8FF00;
+  --whatsapp: #25D366;
+  --whatsapp-hover: #1EBE5A;
+  --body: 'Outfit', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--body);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 999;
+  padding: 24px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  mix-blend-mode: difference;
+}
+.nav-logo {
+  font-family: var(--body);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+}
+.nav-logo span { opacity: 0.5; }
+.nav-right { display: flex; align-items: center; gap: 32px; }
+.nav-link {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.nav-link:hover { opacity: 1; }
+
+@media (max-width: 768px) {
+  .nav { padding: 20px 24px; }
+  .nav-right .nav-link { display: none; }
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 120px 24px 80px;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 40%, rgba(200,255,0,0.03) 0%, transparent 70%),
+    linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+  pointer-events: none;
+}
+.hero-bg-text {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'HeadingFont', Impact, 'Arial Black', sans-serif;
+  font-size: 28vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.02);
+  white-space: nowrap;
+  pointer-events: none;
+  letter-spacing: -0.03em;
+}
+.hero-headline {
+  font-family: 'HeadingFont', Impact, 'Arial Black', sans-serif;
+  font-weight: 900;
+  font-size: clamp(64px, 12vw, 160px);
+  line-height: 0.9;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  position: relative;
+  z-index: 1;
+  color: var(--white);
+}
+.hero-headline .line2 { display: block; }
+.hero-headline .highlight { color: var(--accent); }
+
+.hero-sub {
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 300;
+  color: rgba(255,255,255,0.55);
+  margin-top: 28px;
+  max-width: 520px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-cta-area {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--whatsapp);
+  color: #fff;
+  padding: 20px 48px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-wa:hover {
+  background: var(--whatsapp-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(37,211,102,0.25);
+}
+.btn-wa svg { width: 22px; height: 22px; flex-shrink: 0; }
+
+.hero-proof {
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.03em;
+}
+.hero-proof strong { color: rgba(255,255,255,0.6); }
+
+.hero-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent);
+  font-size: 14px;
+  margin-top: 8px;
+}
+.hero-stars span {
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  font-weight: 400;
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 32px; left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.3;
+}
+.scroll-hint span {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+.scroll-line {
+  width: 1px; height: 40px;
+  background: linear-gradient(180deg, var(--white), transparent);
+  animation: scrollPulse 2s ease infinite;
+}
+@keyframes scrollPulse {
+  0%,100% { opacity: 0.3; transform: scaleY(1); }
+  50% { opacity: 1; transform: scaleY(1.2); }
+}
+
+/* STATS */
+.stats-strip {
+  background: var(--dark-gray);
+  padding: 64px 24px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+.stat { text-align: center; }
+.stat-num {
+  font-family: 'HeadingFont', Impact, 'Arial Black', sans-serif;
+  font-size: clamp(40px, 6vw, 64px);
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.stat-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.4);
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+/* LIGHT SECTION */
+.light-section {
+  background: var(--off-white);
+  color: var(--black);
+  padding: 140px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.light-section::before {
+  content: '';
+  position: absolute;
+  top: -60px; left: -120px;
+  width: 300px; height: 300px;
+  background: var(--accent);
+  opacity: 0.15;
+  transform: rotate(-12deg);
+  pointer-events: none;
+}
+.big-heading {
+  font-family: 'HeadingFont', Impact, 'Arial Black', sans-serif;
+  font-weight: 900;
+  font-size: clamp(48px, 9vw, 120px);
+  line-height: 0.92;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--black);
+}
+.big-heading .accent-green { color: var(--whatsapp); }
+.light-sub {
+  font-size: clamp(16px, 1.8vw, 19px);
+  font-weight: 400;
+  color: rgba(10,10,10,0.55);
+  margin-top: 32px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+.light-cta { margin-top: 48px; }
+
+/* SIGNALS TABLE */
+.signals {
+  background: var(--black);
+  padding: 100px 24px;
+}
+.signals-inner { max-width: 960px; margin: 0 auto; }
+.signals-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.signals-top h2 {
+  font-family: 'HeadingFont', Impact, 'Arial Black', sans-serif;
+  font-size: clamp(36px, 5vw, 56px);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+table th {
+  padding: 14px 16px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.3);
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+table td {
+  padding: 18px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-variant-numeric: tabular-nums;
+  color: rgba(255,255,255,0.7);
+}
+table tbody tr { transition: background 0.2s; }
+table tbody tr:hover { background: rgba(255,255,255,0.03); }
+.pair-name { font-weight: 600; color: var(--white); }
+.buy { color: #4ADE80; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+.sell { color: #F87171; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+.pips-win { color: var(--accent); font-weight: 700; }
+.tag-closed {
+  display: inline-block; padding: 3px 10px;
+  font-size: 9px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  background: rgba(74,222,128,0.1); color: #4ADE80; border: 1px solid rgba(74,222,128,0.2);
+}
+.tag-live {
+  display: inline-block; padding: 3px 10px;
+  font-size: 9px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  background: rgba(200,255,0,0.1); color: var(--accent); border: 1px solid rgba(200,255,0,0.2);
+}
+
+/* FINAL CTA */
+.final-cta {
+  padding: 120px 24px 140px;
+  text-align: center;
+  background: var(--black);
+  position: relative;
+}
+.final-cta::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+}
+.final-cta .big-heading { color: var(--white); }
+.final-sub {
+  font-size: 16px;
+  color: rgba(255,255,255,0.4);
+  margin-top: 20px;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+.final-cta .btn-wa { margin-top: 40px; }
+.final-note { margin-top: 16px; font-size: 12px; color: rgba(255,255,255,0.25); }
+
+/* FOOTER */
+footer {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 32px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+footer p { font-size: 11px; color: rgba(255,255,255,0.25); }
+.footer-disclaimer { max-width: 500px; text-align: right; line-height: 1.5; }
+
+@media (max-width: 768px) {
+  footer { padding: 24px; flex-direction: column; text-align: center; }
+  .footer-disclaimer { text-align: center; }
+  .stats-strip { gap: 40px; padding: 48px 24px; }
+  .signals-top { flex-direction: column; align-items: flex-start; }
+}
+
+/* ANIMATIONS */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal.vis { opacity: 1; transform: translateY(0); }
+
+.hero-headline {
+  animation: heroIn 1s cubic-bezier(0.16,1,0.3,1) 0.1s forwards;
+  opacity: 0; transform: translateY(40px);
+}
+.hero-sub {
+  animation: heroIn 1s cubic-bezier(0.16,1,0.3,1) 0.35s forwards;
+  opacity: 0; transform: translateY(30px);
+}
+.hero-cta-area {
+  animation: heroIn 1s cubic-bezier(0.16,1,0.3,1) 0.55s forwards;
+  opacity: 0; transform: translateY(30px);
+}
+@keyframes heroIn { to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="#" class="nav-logo">Nova Prime <span>Institute</span></a>
+  <div class="nav-right">
+    <a href="#signals" class="nav-link">Signals</a>
+    <a href="https://whatsapp.com/channel/0029VajaEpw9MF8ygmxtD11E" class="btn-wa" style="padding:12px 28px; font-size:13px;" onclick="fbq('track', 'Lead', {content_name: 'WhatsApp - Nav'});">
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Join Free
+    </a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg-text">SIGNALS</div>
+  <h1 class="hero-headline">
+    PREMIUM SIGNALS<span class="line2">FOR <span class="highlight">FREE*</span></span>
+  </h1>
+  <p class="hero-sub">Institutional-grade forex signals delivered straight to your phone. No fees. No upsells. Ever.</p>
+  <div class="hero-cta-area">
+    <a href="https://whatsapp.com/channel/0029VajaEpw9MF8ygmxtD11E" class="btn-wa" onclick="fbq('track', 'Lead', {content_name: 'WhatsApp - Hero'});">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Join WhatsApp Community
+    </a>
+    <div class="hero-stars">★★★★★ <span>4.9 stars from 7,200+ traders</span></div>
+    <p class="hero-proof"><strong>*</strong>Yes, really. $0. Always.</p>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<div class="stats-strip">
+  <div class="stat reveal"><div class="stat-num">78%</div><div class="stat-label">Win Rate</div></div>
+  <div class="stat reveal"><div class="stat-num">14K+</div><div class="stat-label">Active Traders</div></div>
+  <div class="stat reveal"><div class="stat-num">2,400+</div><div class="stat-label">Signals Sent</div></div>
+  <div class="stat reveal"><div class="stat-num">$0</div><div class="stat-label">Cost — Forever</div></div>
+</div>
+
+<section class="light-section">
+  <h2 class="big-heading reveal">STOP PAYING<br>FOR <span class="accent-green">SIGNALS.</span></h2>
+  <p class="light-sub reveal">Skip the overpriced Telegram groups and "VIP" scams. Get the same quality signals the gurus charge $300/month for — delivered free to your WhatsApp.</p>
+  <div class="light-cta reveal">
+    <a href="https://whatsapp.com/channel/0029VajaEpw9MF8ygmxtD11E" class="btn-wa" onclick="fbq('track', 'Lead', {content_name: 'WhatsApp - Light Section'});">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Get Free Signals Now
+    </a>
+  </div>
+</section>
+
+<section class="signals" id="signals">
+  <div class="signals-inner">
+    <div class="signals-top reveal">
+      <h2>RECENT<br>RESULTS.</h2>
+      <a href="https://whatsapp.com/channel/0029VajaEpw9MF8ygmxtD11E" class="btn-wa" style="padding:14px 28px; font-size:14px;" onclick="fbq('track', 'Lead', {content_name: 'WhatsApp - Signals'});">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Get These Signals
+      </a>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Pair</th><th>Type</th><th>Entry</th><th>S/L</th><th>T/P</th><th>Result</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td class="pair-name">EUR/USD</td><td><span class="buy">Buy</span></td><td>1.08450</td><td>1.08200</td><td>1.08920</td><td class="pips-win">+47 pips</td><td><span class="tag-closed">TP Hit</span></td></tr>
+          <tr><td class="pair-name">GBP/JPY</td><td><span class="buy">Buy</span></td><td>191.450</td><td>190.900</td><td>192.690</td><td class="pips-win">+124 pips</td><td><span class="tag-closed">TP Hit</span></td></tr>
+          <tr><td class="pair-name">XAU/USD</td><td><span class="sell">Sell</span></td><td>2,345.00</td><td>2,355.00</td><td>2,318.00</td><td class="pips-win">+270 pips</td><td><span class="tag-closed">TP Hit</span></td></tr>
+          <tr><td class="pair-name">USD/CAD</td><td><span class="sell">Sell</span></td><td>1.36200</td><td>1.36500</td><td>1.35750</td><td class="pips-win">+45 pips</td><td><span class="tag-closed">TP Hit</span></td></tr>
+          <tr><td class="pair-name">GBP/USD</td><td><span class="buy">Buy</span></td><td>1.26800</td><td>1.26550</td><td>1.27300</td><td style="color:var(--accent);font-weight:600;">Running</td><td><span class="tag-live">Live</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <h2 class="big-heading reveal">YOUR NEXT<br>TRADE IS<br>WAITING.</h2>
+  <p class="final-sub reveal">One tap. Instant access. No email, no credit card, no catch.</p>
+  <div class="reveal">
+    <a href="https://whatsapp.com/channel/0029VajaEpw9MF8ygmxtD11E" class="btn-wa" onclick="fbq('track', 'Lead', {content_name: 'WhatsApp - Final CTA'});">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Join 14,000+ Traders Free
+    </a>
+  </div>
+  <p class="final-note">Free today. Free tomorrow. Free forever.</p>
+</section>
+
+<footer>
+  <p>&copy; 2026 Nova Prime Institute</p>
+  <p class="footer-disclaimer">Forex trading involves substantial risk. Past performance does not guarantee future results. Trade responsibly.</p>
+</footer>
+
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+}, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
